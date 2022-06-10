@@ -1,0 +1,45 @@
+1) Download and install nwm from https://github.com/coreybutler/nvm-windows
+     a) Click on "Download Now!" (https://github.com/coreybutler/nvm-windows/releases)
+     b) Download and intall nwm-setup.exe
+2) Create project sources directory
+     a) Here C:\Sources\njs-jejardine\
+3) Set visual studio code run as admnistrator
+     a) Right click on Visual Studio Code shortcut
+     b) Select tab "Compatibility"
+     c) Check "Run as administrator"
+4) Run visual studio and open directory
+5) Install nodejs long time support version
+     a) On VSC Terminal (CTLR+%)
+     b) Type: nvm install lts
+     c) Type: nvm use <lts version number>
+6) Install pnpm
+     a) Type: npm install -g pnpm
+7) Bypass windows script restriction
+     a) Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+8) Init adonis Project
+     - Type command: cd ..
+     - Type command: pnpm create adonis-ts-app njs-jejardine
+     - Choose: web
+     - Type project name: njs-jejardine
+     - Type for eslint: y
+     - Type for pretty: y
+     - Type for webpack: y
+9) Adding database support
+     - Type command: cd .\njs-jejardine\
+     - Type command: pnpm add @adonisjs/lucid
+         - Missing peer openapi-types
+     - Type command: node ace configue @adonisjs/lucid
+10) Copy and edit README.md file
+11) Copy LICENSE file (here GNU General Public License v3.0)
+12) Create project on github
+13) Init project on git
+     a) Configure git user name and email
+          - type: git config --global user.name "<User Name>"
+          - type: git config --global user.email "<User Email>"
+     c) Init git project
+          - type: git init
+          - type: git add .
+          - type: git commit -m "first commit"
+          - type: git branch -M main
+          - type: git remote add origin https://github.com/threadom/njs-jejardine.git
+          - type: git push -u origin main
