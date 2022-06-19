@@ -14,7 +14,7 @@ specifiers:
   '@symfony/webpack-encore': ^2.1.0
   adonis-preset-ts: ^2.1.0
   bootstrap: ^4.6.0
-  chart.js: 2.9.4
+  chart.js: ^2.9.4
   datatables.net: ^1.10.24
   eslint: ^8.17.0
   eslint-config-prettier: ^8.5.0

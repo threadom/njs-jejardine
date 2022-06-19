@@ -1,4 +1,4 @@
-nvm install lts
+nvm install 16.15.1
 nvm use 16.15.1
 npm install --location=global pnpm
 Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
@@ -11,4 +11,3 @@ cp -R .\node_modules\chart.js\dist\ .\public\vendor\chart.js\
 cp -R .\node_modules\datatables.net\js\ .\public\vendor\datatables.net\
 cp .\.env.example .env
 pnpm run dev
-pause

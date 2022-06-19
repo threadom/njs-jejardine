@@ -1,2 +1,1 @@
-powershell install.ps1
-pause
+powershell -File install.ps1
