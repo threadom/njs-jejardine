@@ -1,0 +1,19 @@
+@!layout('partials/html')
+
+@section('template')
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        @!include(['contents/',content].join(''))
+
+    </div>
+
+    @!include('partials/body-scripts')
+
+    @each (script in scripts)
+        @!include(['scripts/',script].join(''))
+    @endeach
+    
+</body>
+@endsection
