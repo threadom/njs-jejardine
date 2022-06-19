@@ -13,14 +13,15 @@ specifiers:
   '@japa/runner': ^2.0.9
   '@symfony/webpack-encore': ^2.1.0
   adonis-preset-ts: ^2.1.0
-  bootstrap: ^5.1.3
+  bootstrap: ^4.6.0
   chart.js: 2.9.4
+  datatables.net: ^1.10.24
   eslint: ^8.17.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-adonis: ^2.1.0
   eslint-plugin-prettier: ^4.0.0
   jquery: ^3.6.0
-  jquery-easing: ^0.0.1
+  jquery.easing: ^1.4.1
   luxon: ^2.4.0
   pino-pretty: ^8.0.0
   prettier: ^2.6.2
@@ -40,10 +41,11 @@ dependencies:
   '@adonisjs/shield': 7.0.11_7kjit65f2ap2rbnid4udssgo7u
   '@adonisjs/view': 6.1.5_@adonisjs+core@5.8.3
   '@fortawesome/fontawesome-free': 6.1.1
-  bootstrap: 5.1.3
+  bootstrap: 4.6.0_jquery@3.6.0
   chart.js: 2.9.4
+  datatables.net: 1.10.24
   jquery: 3.6.0
-  jquery-easing: 0.0.1
+  jquery.easing: 1.4.1
   luxon: 2.4.0
   proxy-addr: 2.0.7
   reflect-metadata: 0.1.13
@@ -3086,10 +3088,13 @@ packages:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
 
-  /bootstrap/5.1.3:
-    resolution: {integrity: sha512-fcQztozJ8jToQWXxVuEyXWW+dSo8AiXWKwiSSrKWsRB/Qt+Ewwza+JWoLKiTuQLaEPhdNAJ7+Dosc9DOIqNy7Q==}
+  /bootstrap/4.6.0_jquery@3.6.0:
+    resolution: {integrity: sha512-Io55IuQY3kydzHtbGvQya3H+KorS/M9rSNyfCGCg9WZ4pyT/lCxIlpJgG1GXW/PswzC84Tr2fBYi+7+jFVQQBw==}
     peerDependencies:
-      '@popperjs/core': ^2.10.2
+      jquery: 1.9.1 - 3
+      popper.js: ^1.16.1
+    dependencies:
+      jquery: 3.6.0
     dev: false
 
   /brace-expansion/1.1.11:
@@ -3857,6 +3862,12 @@ packages:
   /data-uri-to-buffer/2.0.2:
     resolution: {integrity: sha512-ND9qDTLc6diwj+Xe5cdAgVTbLVdXbtxTJRXRhli8Mowuaan+0EJOtdqJ0QCHNSSPyoXGx9HX2/VMnKeC34AChA==}
     dev: true
+
+  /datatables.net/1.10.24:
+    resolution: {integrity: sha512-CwXixvOdinvBCLXvcTloDinWiEM7Geaz+GwyjPrZL+MXIGPcLv4Op1bbWn8ErsI1JWMIWC8Cuf1rnDU2RrFV5w==}
+    dependencies:
+      jquery: 3.6.0
+    dev: false
 
   /dateformat/4.6.3:
     resolution: {integrity: sha512-2P0p0pFGzHS5EMnhdxQi7aJN+iMheud0UhG4dlE1DLAlvL8JHjJJTX/CSm4JXwV0Ka5nGk3zC5mcb5bUQUxxMA==}
@@ -5598,10 +5609,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /jquery-easing/0.0.1:
-    resolution: {integrity: sha512-ZDlfbZ5gZQWqXd52GO110wk3NIDmPFjN/5HLRRQ9KFfmipB/62kt8O3jT3Vafxeb13k01qg/BKBpdbvT0MoUKw==}
-    dependencies:
-      jquery: 3.6.0
+  /jquery.easing/1.4.1:
+    resolution: {integrity: sha512-BVpRacWCbNfo/ALWxnLkIY/WRa4Ydg/LtwzIJZvDm7vrhV8Txv+ACi6EGnU11zT19sTc3KEPathWx6CtjWLD1w==}
     dev: false
 
   /jquery/3.6.0:
